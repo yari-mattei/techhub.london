@@ -1,7 +1,7 @@
 techhub.london
 ==============
 
-Techhub.london web page: you are welcome to edit the code and add your modification!
+Techhub.london web page: you are welcome to edit the code and add your modifications!
 
 You can find the source in the [master](https://github.com/techhubdotcom/techhub.london/tree/master) branch, while the live pages are in the [gh-pages](https://github.com/techhubdotcom/techhub.london/tree/gh-pages) branch.
 
