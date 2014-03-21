@@ -54,5 +54,7 @@ Pull request when you are done ;)
 
 0.1 Hello world :)
 
+## License
+
 TechHub.London is licensed under the terms of the MIT Licence - see the License.txt file in the root directory for more details. 
 
