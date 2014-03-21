@@ -31,8 +31,7 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    '<%= config.app %>/bower_components/bootstrap/dist/css/bootstrap.css': '<%= config.app %>//bower_components/bootstrap/less/bootstrap.less',
-                    '<%= config.app %>/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css': '<%= config.app %>//bower_components/jasny-bootstrap/less/jasny-bootstrap.less'
+                    '<%= config.app %>/bower_components/bootstrap/dist/css/bootstrap.css': '<%= config.app %>//bower_components/bootstrap/less/bootstrap.less'
                 }
             }
         },
@@ -180,7 +179,7 @@ module.exports = function(grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/index.html'],
+                src: ['<%= config.app %>/*.html'],
                 ignorePath: '<%= config.app %>/'
             }
         },
@@ -193,7 +192,6 @@ module.exports = function(grunt) {
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}'
                     ]
                 }

@@ -3,27 +3,13 @@
     width: 100%;
     height: 100%;
 }
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(http://mattia.test.s3.amazonaws.com/techhub.london/207night.jpg) no-repeat bottom center fixed;
-    background-color: #1b1b1b;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 .logo-intro {
     display: inline-block;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 1s;
 }
 .dot-london {
     display: inline-block;
@@ -33,18 +19,16 @@
 .jumbo-text {
     font-size: 1.5em;
     margin-top: 40px;
-    color: @brand-techhub;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: .5s;
 }
-// text section 
-.home-info-text {
-    font-size: 1.7em;
+.drink-list {
+  line-height: 1.6em;
+  font-size: 1.4em;
+}
+.section-text {
+    padding:100px 0;
     text-align: center;
-    & p {
-        padding: 80px 0;
-    }
 }
-// map section 
 .map {
     position: relative;
     height: 30em;
@@ -69,22 +53,106 @@
     background: white;
     opacity: 0;
 }
-.roundabout {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 300px 0;
-    text-align: center;
+.navbar-custom a {
     color: #fff;
-    background: url(http://mattia.test.s3.amazonaws.com/techhub.london/roundabout.jpg) no-repeat bottom center scroll;
+    text-transform: uppercase;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+.navbar-toggle {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    padding: 9px 10px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     background-color: #1b1b1b;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-image: none;
+    border: 1px solid @brand-techhub;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+    background-color: @brand-techhub;
+}
+.logo-food {
+    margin-bottom:30px;
+    margin-top:30px;
 }
 @media(min-width:767px) {
-    .intro {
+    .intro, .eat {
+        display: table;
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        text-align: center;
+        color: #fff;
+        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/207night.jpg) no-repeat bottom center fixed;
+        background-color: #1b1b1b;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .eat {
+        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/eat.jpg) no-repeat bottom center fixed;
+    }
+    .roundabout {
+        width: 100%;
+        height: auto;
+        padding: 300px 0;
+        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/roundabout2.jpg) no-repeat bottom center scroll;
+        background-color: #1b1b1b;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .whitecross-mkt {
+        width: 100%;
+        height: auto;
+        padding: 300px 0;
+        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/whitecross-mkt.jpg) no-repeat bottom center scroll;
+        background-color: #1b1b1b;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+        .bg-drink {
+        width: 100%;
+        height: auto;
+        padding: 300px 0;
+        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/drink1.jpg) no-repeat bottom center scroll;
+        background-color: #1b1b1b;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background-color: rgba(0, 0, 0, 0.35);
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .intro, .eat {
         height: 100%;
         padding: 0;
     }
@@ -94,7 +162,7 @@
         font-size: 4em;
     }
     .content-section {
-        padding-top: 150px;
+        padding-top: 20px;
     }
     #footer {
         padding-top:100px;
