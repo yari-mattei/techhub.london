@@ -20,7 +20,7 @@ We ask that all additions fit these criteria:
 Any edits that do not fit the criteria sadly will not be added to the website :(
 
 ## Simple edits
-For simple edits, all you need to do is fork the code, edit the HTML pages in the ‘apps’ folder and send us a pull request. 
+For simple edits, all you need to do is fork the code, edit the HTML pages in the `app` folder and send us a pull request. 
 
 ## Advanced edits
 You need [Node.js](http://nodejs.org/) installed to run [Grunt](http://gruntjs.com/).  
@@ -31,7 +31,6 @@ I really suggest you to install Node.js with a packet manager, instructions can 
 - Fork the project and clone it on your machine
 - Install npm modules dependencies with `npm install`
 - Install bower dependencies with `bower install`
-- Inject bower dependencies directly into the html with `grunt bowerInstall
 
 ## Developement
 Run `grunt serve` and start editing the pages that you find in `app/` directory.  
