@@ -31,7 +31,8 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    '<%= config.app %>/bower_components/bootstrap/dist/css/bootstrap.css': '<%= config.app %>//bower_components/bootstrap/less/bootstrap.less'
+                    '<%= config.app %>/bower_components/bootstrap/dist/css/bootstrap.css': '<%= config.app %>//bower_components/bootstrap/less/bootstrap.less',
+                    '<%= config.app %>/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css': '<%= config.app %>//bower_components/jasny-bootstrap/less/jasny-bootstrap.less'
                 }
             }
         },
@@ -68,7 +69,7 @@ module.exports = function(grunt) {
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             less: {
-                files: ['<%= config.app %>/bower_components/bootstrap/less/{,*/}*.less'],
+                files: ['<%= config.app %>/bower_components/bootstrap/less/{,*/}*.less','<%= config.app %>/bower_components/jasny-bootstrap/less/{,*/}*.less'],
                 tasks: ['less:dev'],
                 options: {
                     livereload: true
