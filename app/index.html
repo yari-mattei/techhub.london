@@ -52,9 +52,7 @@
                 <ul class="nav navbar-nav navbar-right">
                 <li><a href="events.html">Events</a>
                     </li>
-                    <li><a href="utilities.html">Utilities</a>
-                    </li>
-                    <li><a href="shopping.html">Shopping</a>
+                    <li><a href="usefulstuff.html">Useful stuff</a>
                     </li>
                     <li><a href="eat.html">Eat & Drink</a>
                     </li>
@@ -107,8 +105,8 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="section-text">
-                        <h3>The area is home to London's biggest cluster of Tech companies, and it's a flourishing neighbourhood with a lot to offer, both in terms of professional networking and local flavour!
-                            <br>Since we know the area pretty well, we thought we’d share our tips for where to go, where to stay and what to do.
+                        <h3>The area is home to <span class="text-success">London's biggest cluster of Tech companies</span>, and it's a flourishing neighbourhood with a lot to offer, both in terms of professional networking and local flavour!
+                            <br><br>Since we know the area pretty well, we thought we’d share our tips for where to go, where to stay and what to do.
                         </h3>
                     </div>
                 </div>
@@ -122,7 +120,8 @@
                         <h3>Think you know London better? 
                         <br>All of these pages are editable via <a href="https://github.com/techhubdotcom/techhub.london"><i class="fa fa-github"></i>&nbsp;GitHub</a> - send us a pull request with your additions, we’d love to have them!
                         <br>
-                        <br>Not code friendly? Email <a href="mailto:hello@techhub.com">hello@techhub.com</a>
+                        <br>Not code friendly? 
+                        <br>Email <a href="mailto:hello@techhub.com">hello@techhub.com</a>
                         </h3>
                     </div>
                 </div>
@@ -256,22 +255,19 @@
         }]
     }
     var map01 = new google.maps.Map(document.getElementById('map_canvas_01'), mapOptions);
-    var locations = [
-        ['TechHub Old Street', 51.525831, -0.089141, 1],
-        ['TechHub Campus', 51.522685, -0.085222, 1]
-    ];
 
-    var myIcon = new google.maps.MarkerImage("http://mattia.test.s3.amazonaws.com/website/assets/img/techhub_marker@2x.png", null, null, null, new google.maps.Size(55, 29));
+    var iconTechHub = new google.maps.MarkerImage("http://mattia.test.s3.amazonaws.com/techhub.london/techhub-marker.png", null, null, null, new google.maps.Size(90, 47));
 
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map01,
-            icon: myIcon
-        });
-    }
+    var markerTechHub = new google.maps.Marker({
+        position: new google.maps.LatLng(51.525831, -0.089141),
+        map: map01,
+        icon: iconTechHub
+    });
+    var markerTechHubCampus = new google.maps.Marker({
+        position: new google.maps.LatLng(51.522685, -0.085222),
+        map: map01,
+        icon: iconTechHub
+    });
     </script>
 
     <!-- build:js scripts/plugins.js -->

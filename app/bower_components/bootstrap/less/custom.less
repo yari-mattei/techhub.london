@@ -15,11 +15,17 @@
     display: inline-block;
     font-size: 2em;
     margin-left: 10px;
+    background-color: #1b1b1b;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 .jumbo-text {
     font-size: 1.5em;
     margin-top: 40px;
     -webkit-animation-delay: .5s;
+}
+.jumbo-text span {
+    background-color: #1b1b1b;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 .drink-list {
     line-height: 1.6em;
@@ -85,62 +91,65 @@
     margin-bottom:30px;
     margin-top:30px;
 }
+.text-black {
+    color: #333;
+}
 @media(min-width:767px) {
-    .intro, .eat, .staying, .workout {
+    .img-background {
         display: table;
         width: 100%;
         height: 100%;
         padding: 100px 0;
         text-align: center;
         color: #fff;
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/207night.jpg) no-repeat bottom center fixed;
         background-color: #1b1b1b;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+    }
+    .intro {
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/207night.jpg);
     }
     .eat {
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/eat.jpg) no-repeat bottom center fixed;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/eat.jpg);
     }
     .staying {
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/staying1.jpg) no-repeat bottom center fixed;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/staying1.jpg);
     }
     .workout {
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/workout1.jpg) no-repeat bottom center fixed;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/workout1.jpg);
+    }
+    .shopping {
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/shopping1.jpg);
     }
     .roundabout {
-        width: 100%;
         height: auto;
         padding: 300px 0;
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/roundabout2.jpg) no-repeat bottom center scroll;
-        background-color: #1b1b1b;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/roundabout2.jpg);
+        background-attachment: scroll;
     }
     .whitecross-mkt {
-        width: 100%;
         height: auto;
         padding: 300px 0;
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/whitecross-mkt.jpg) no-repeat bottom center scroll;
-        background-color: #1b1b1b;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/whitecross-mkt.jpg);
+        background-attachment: scroll;
     }
     .bg-drink {
-        width: 100%;
         height: auto;
         padding: 300px 0;
-        background: url(http://mattia.test.s3.amazonaws.com/techhub.london/drink1.jpg) no-repeat bottom center scroll;
-        background-color: #1b1b1b;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/drink1.jpg);
+        background-attachment: scroll;
+    }
+    .shopping2 {
+        height: auto;
+        padding: 200px 0;
+        background-image: url(http://mattia.test.s3.amazonaws.com/techhub.london/shopping1.jpg);
+        background-attachment: scroll;
     }
     .navbar {
         padding: 20px 0;
